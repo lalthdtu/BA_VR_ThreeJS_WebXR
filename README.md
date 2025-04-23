@@ -1,4 +1,4 @@
-# ✨ Three.js Path Recorder ✨
+# Path Recorder (Three.js/WebXR)
 
 A simple web application demonstrating path recording and visualization in a 3D environment using Three.js. Supports both Desktop (Mouse/Keyboard) and WebXR (VR) interaction, automatically detecting the best mode available.
 
@@ -53,6 +53,46 @@ The application will automatically detect if your browser and system support Web
 *   **Move:** Movement is typically handled by your VR system's standard locomotion (e.g., joystick on controllers, teleportation - this demo doesn't implement specific VR locomotion, it relies on headset tracking).
 *   **Record:** Press the **Trigger button** on either VR controller to start recording. Press the Trigger again to stop recording and draw the path.
 *   **Fallback Record:** The `R` key on the physical keyboard can also be used as a fallback to start/stop recording while in VR.
+
+## 📁 Project Structure / Scripts
+
+*   **`index.html`**: The main HTML file, sets up the page structure, canvas container, UI elements, and loads the main JavaScript module.
+*   **`main.js`**:
+    *   The core application logic and entry point.
+    *   Initializes the scene, camera, renderer, and UI manager.
+    *   Detects XR support and sets up either Desktop or VR controls accordingly.
+    *   Manages the recording state (`isRecording`, `recordedPositions`, `sampleRate`).
+    *   Handles event listeners for keyboard input, window resize, VR controller input.
+    *   Contains the main animation loop (`animate`).
+    *   Draws the recorded paths onto the scene.
+*   **`UIManager.js`**:
+    *   A class responsible for interacting with the DOM elements in `index.html`.
+    *   Updates the recording status indicator, sample rate display, and instruction text.
+    *   Shows temporary "toast" messages for user feedback.
+*   **`createScene.js`**:
+    *   A function that creates and configures the basic Three.js `Scene`.
+    *   Sets up the `PerspectiveCamera`, lighting (Hemisphere, Ambient), and initial scene objects (ground plane, cube).
+    *   Returns the created scene and camera instances.
+*   **`setupRenderer.js`**:
+    *   A function that creates and configures the Three.js `WebGLRenderer`.
+    *   Sets the size, pixel ratio, and enables XR support (`renderer.xr.enabled = true`).
+    *   Appends the renderer's canvas element to the document body.
+    *   Returns the configured renderer instance.
+*   **`setupDesktop.js`**:
+    *   A function responsible for setting up the desktop controls.
+    *   Initializes `PointerLockControls` for mouse-look functionality.
+    *   Manages the movement state (`moveState`) based on keyboard input.
+    *   Provides an `updateMovement` function to calculate and apply camera movement based on the state and delta time, incorporating simple damping.
+    *   Returns the controls instance, move state object, and update function.
+*   **`setupVR.js`**:
+    *   A function responsible for setting up the WebXR environment.
+    *   Appends the `VRButton` to the page.
+    *   Gets references to the XR controllers and adds them to the scene.
+    *   Uses `XRControllerModelFactory` to load and display models for the controllers.
+    *   Adds simple line pointers to the controllers for visual feedback.
+    *   Returns references to the controllers.
+*   **`package.json` / `package-lock.json`**: Define project dependencies (Three.js, Vite) and scripts (`dev`, `build`, `preview`).
+
 
 ## 💡 Technology Stack
 
