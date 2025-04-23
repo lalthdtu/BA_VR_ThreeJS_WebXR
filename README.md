@@ -2,10 +2,6 @@
 
 A simple web application demonstrating path recording and visualization in a 3D environment using Three.js. Supports both Desktop (Mouse/Keyboard) and WebXR (VR) interaction, automatically detecting the best mode available.
 
-<!-- Add a screenshot or GIF here -->
-<!-- Example: ![Screenshot of the Path Recorder in action](./screenshot.png) -->
-*(Image: A view of the 3D scene showing the ground plane, a central cube, and a multi-colored line representing a recorded user path.)*
-
 ## 🚀 Features
 
 *   **Real-time Path Recording:** Capture the user's movement path within the 3D scene.
