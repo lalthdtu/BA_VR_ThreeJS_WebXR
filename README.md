@@ -74,7 +74,3 @@ The application will automatically detect if your browser and system support Web
 *   Path editing or smoothing options.
 *   UI for selecting, viewing, or deleting multiple recorded paths.
 *   Implement specific VR locomotion options (teleport, joystick movement).
-
-## 📄 License
-
-[Specify Your License Here - e.g., MIT License]
