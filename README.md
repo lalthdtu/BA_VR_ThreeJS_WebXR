@@ -1,6 +1,6 @@
-# 👣 VR Navigation Path Recorder
+# 👣 VR Navigation Path Recorder **`Vite + Three.js + WebXR`**
 
-Vite + Three.js + WebXR
+
 
 ## 42578 Advanced Business Analytics: Business Analytics & Virtual Reality
 
