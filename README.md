@@ -1,4 +1,6 @@
-# VR Navigation Path Recorder (Three.js/WebXR) - BA/VR
+# 👣 VR Navigation Path Recorder 
+
+**`42578 Advanced Business Analytics: Business Analytics & Virtual Reality`**
 
 A simple web application demonstrating path recording and visualization in a 3D environment using Three.js. Supports both Desktop (Mouse/Keyboard) and WebXR (VR) interaction, automatically detecting the best mode available.
 
@@ -19,7 +21,7 @@ A simple web application demonstrating path recording and visualization in a 3D 
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/lalthdtu/BA_VR_ThreeJS_WebXR
     cd <repository-directory>
     ```
 2.  **Install dependencies:**
