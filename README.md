@@ -19,7 +19,7 @@ A simple web application demonstrating path recording and visualization in a 3D 
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/lalthdtu/BA_VR_ThreeJS_WebXR
     cd <repository-directory>
     ```
 2.  **Install dependencies:**
