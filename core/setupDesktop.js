@@ -13,7 +13,7 @@ export function setupDesktopControls(camera, domElement) {
 
   const velocity = new THREE.Vector3();
   const direction = new THREE.Vector3();
-  const moveSpeed = 0.25;
+  const moveSpeed = 0.4;
   const damping = 10.0;
 
   const updateMovement = (deltaTime) => {
