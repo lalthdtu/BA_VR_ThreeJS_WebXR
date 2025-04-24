@@ -1,4 +1,8 @@
-# 👣 VR Navigation Path Recorder (Three.js/WebXR) - BA/VR
+# 👣 VR Navigation Path Recorder
+
+Vite + Three.js + WebXR
+
+## 42578 Advanced Business Analytics: Business Analytics & Virtual Reality
 
 A simple web application demonstrating path recording and visualization in a 3D environment using Three.js. Supports both Desktop (Mouse/Keyboard) and WebXR (VR) interaction, automatically detecting the best mode available.
 
